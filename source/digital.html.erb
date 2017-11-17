@@ -1,0 +1,91 @@
+---
+title: Fold Digitally
+---
+
+<div class="digital-fold">
+
+
+
+
+  <div class="left">
+    <div class="container">
+      <div class="text-area">
+        <h1 class="t-title white">welcome to fold</h1>
+        <p class="t-body white">Fold your phone</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="right">
+    <div class="container">
+
+      <div class="right-content" id="intro">
+        <div class="text-area">
+          <p class="t-body white">step one</p>
+        </div>
+      </div>
+
+      <div class="right-content" id="stepOne">
+        <div class="text-area">
+          <p class="t-body white">step two</p>
+        </div>
+      </div>
+
+      <div class="right-content" id="stepTwo">
+        <div class="text-area">
+          <p class="t-body white">step three</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('.right-content').css('height', window.innerHeight);
+
+    $(window).resize(function() {
+      $('.right-content').css('height', window.innerHeight);      
+    });
+
+    // Offset scroll settings
+    var step_one_offset = $("#stepOne").offset().top;
+    var step_two_offset = $("#stepTwo").offset().top;
+    var $w = $(window).scroll(function(){
+        if ( $w.scrollTop() > step_one_offset && $w.scrollTop() < step_one_offset ) {   
+            console.log('step1');
+        } else if ($w.scrollTop() > step_two_offset){
+          console.log('step 2')
+        }
+    });
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

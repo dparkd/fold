@@ -1,0 +1,67 @@
+---
+title: fold your phone
+---
+
+<div class="container mobile-container">
+  <div class="row">
+    <p class="t-body white">whoops. <br> this site doesn't work on a mobile device. If you would like to truly fold your phone visit the site on a desktop computer.</p>
+    <!-- <%= image_tag "images/logo.jpg" %> -->
+  </div>
+</div>
+
+
+
+<div class="container desktop-container">
+  <div class="introduction">
+
+    <div class="block" style="text-align: center; padding: 0; height: 100vh">
+      <div class="img-block">
+        <%= image_tag "logo.png" %>
+        <%= image_tag "logo.png" %>
+        <%= image_tag "logo.png" %>
+        <%= image_tag "logo.png" %>
+        <%= image_tag "logo.png" %>
+        <%= image_tag "logo.png" %>
+      </div>
+    </div>
+    
+    <div class="block">
+      <p class="t-large white body-copy" >
+        hey! I'm glad you made it to fold. fold is a lifestyle that changes the way people use their smartphones and helps bring attention back into the world and not the device.
+      </p>
+      <br>
+
+      <a href="/whyfold"><p class="t-small white">Why fold my phone? <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p></a>
+
+      <a href="#"><p class="t-small white">How do I fold? <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p></a>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<script>
+  
+$(document).ready(function() {
+
+  var i = 50;
+
+  $('.img-block img').each(function() {
+    $(this).css("top", i+"px");
+    
+    i = i + 70;
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+

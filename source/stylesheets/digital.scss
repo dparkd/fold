@@ -1,0 +1,44 @@
+.digital-fold {
+  position: relative;
+
+  .left {
+    width: 40%;
+    position: fixed;
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    -webkit-overflow-scrolling: touch;
+
+    .container {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .text-area {
+      position: absolute; 
+      width: 90%;
+      left: 50%; 
+      top: 50%; 
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .right {
+    width: 60%; 
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    
+    .right-content {
+      position: relative;
+      .text-area {
+        position: absolute; 
+        width: 90%;
+        left: 50%; 
+        top: 50%; 
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
