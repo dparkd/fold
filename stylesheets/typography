@@ -4,10 +4,17 @@
   font-size: 2em;
   line-height: 50px; }
 
+.t-label {
+  letter-spacing: 2px;
+  font-family: nhlight;
+  font-size: 2em;
+  line-height: 100px;
+  margin-bottom: 0px; }
+
 .t-large {
   letter-spacing: 2px;
   font-family: nhlight;
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 100px; }
 
 .t-small {
@@ -17,10 +24,10 @@
   line-height: 80px; }
 
 .t-smaller {
-  letter-spacing: .7px;
+  letter-spacing: 1.2px;
   font-family: nhlight;
   font-size: 1.5em;
-  line-height: 70px;
+  line-height: 60px;
   text-align: justify; }
 
 .t-title {
@@ -40,6 +47,12 @@
 
 .gray {
   color: #A1A1A1; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
 
 .bold {
   font-size: 1.5em;
