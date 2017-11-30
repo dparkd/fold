@@ -71,9 +71,9 @@
   animation: rotate 10s infinite linear; }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotateZ(0deg); }
-  to {
+  100% {
     transform: rotateZ(360deg); } }
 @keyframes bounce {
   0% {

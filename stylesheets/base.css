@@ -243,18 +243,18 @@
   animation: rotate 10s infinite linear; }
 
 @-webkit-keyframes rotate {
-  from {
+  0% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg); }
-  to {
+  100% {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg); } }
 
 @keyframes rotate {
-  from {
+  0% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg); }
-  to {
+  100% {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg); } }
 @-webkit-keyframes bounce {
