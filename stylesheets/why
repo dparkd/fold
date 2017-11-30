@@ -1,0 +1,16 @@
+.why-videos {
+  position: relative;
+  padding: 150px 0;
+  padding-bottom: 0px;
+  display: inline-block;
+  width: 100%; }
+  .why-videos .vid-container {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+    .why-videos .vid-container video {
+      display: inline-block;
+      width: 300px;
+      height: auto;
+      padding: 10px; }

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>why fold your phone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link href="/stylesheets/base.css" rel="stylesheet" /><link href="/stylesheets/normalize.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/333db2d544.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <div class="container mobile-container">
+  <div class="row">
+    <p class="t-body white">whoops. <br> this site doesn't work on a mobile device. If you would like to truly fold your phone visit the site on a desktop computer.</p>
+    <!-- <img src="/images/logo.jpg" alt="Logo" /> -->
+  </div>
+</div>
+
+
+
+<div class="container desktop-container" id="whyfold">
+  <div class="introduction">
+    <div class="block" id="no-animate">
+      <p class="t-large white">
+        Why should you fold your phone?
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="block why-videos" id="no-animate">
+  <div class="vid-container">
+    <video width="168px" height="300px" src="../images/zoom/0.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/1.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/2.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/3.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/4.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/5.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/6.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/7.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/8.MOV" autoplay loop muted></video>
+    <video width="168px" height="300px" src="../images/zoom/9.MOV" autoplay loop muted></video>
+  </div>
+</div>
+
+
+<div class="container desktop-container" id="whyfold">
+  <div class="introduction">
+    
+    <div class="block no-padding" style="padding-bottom: 0px;">
+      <p class="t-large white body-copy">
+        A lot of us are addicted to our phones. However, the phone in and of itself is not a bad thing to have or use. It only becomes a problem when the phone is no longer a tool that we <i>utilize</i> but one that we <i>submit</i> to.
+      </p>
+    </div>
+
+    <div class="row" style="padding-top: 50px;">
+      <div class="columns six" style="padding-right: 50px;">
+        <p class="gray t-smaller">The phone should make <span class="white">travel easier</span> (lyft, google maps, waze), <span class="white">finance faster</span> (venmo, banking apps) and <span class="white">life better</span> (meditation, notes)</p>
+      </div>
+      <div class="columns six" style="padding-right: 50px;">
+        <p class="gray t-smaller">The phone should not make us <span class="white">use time aimlessly</span> (candy crush, pokemonGO), <span class="white">make us addicts to infinite content</span> (facebook, instagram, snapchat) and <span class="white">make us slaves to our work</span> (slack, gmail)</p>
+      </div>
+    </div>
+
+    <div class="block no-padding">
+      <p class="t-large white body-copy">
+        If the phone is supposed to be a tool, this is how I would define what the phone is. 
+      </p>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<script>
+  
+$(document).ready(function() {
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+    /* Check the location of each desired element */
+    $('.block').each( function(i){
+      var bottom_of_object = $(this).position().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      /* If the object is completely visible in the window, fade it it */
+      if( bottom_of_window + 800 > bottom_of_object ){
+        $(this).animate({'opacity':'1'},1000);       
+      }
+    }); 
+  }); 
+});
+</script>
+  </body>
+</html>

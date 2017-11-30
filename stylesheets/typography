@@ -1,0 +1,55 @@
+.t-body {
+  letter-spacing: 0.8px;
+  font-family: nhlight;
+  font-size: 2em;
+  line-height: 50px; }
+
+.t-large {
+  letter-spacing: 2px;
+  font-family: nhlight;
+  font-size: 3.2em;
+  line-height: 100px; }
+
+.t-small {
+  letter-spacing: 1.4px;
+  font-family: nhlight;
+  font-size: 2em;
+  line-height: 80px; }
+
+.t-smaller {
+  letter-spacing: .7px;
+  font-family: nhlight;
+  font-size: 1.5em;
+  line-height: 70px;
+  text-align: justify; }
+
+.t-title {
+  letter-spacing: 0.8px;
+  font-family: nhlight;
+  font-size: 3em;
+  line-height: 50px; }
+
+.indent {
+  padding-left: 20px; }
+
+.white {
+  color: white; }
+
+.black {
+  color: black; }
+
+.gray {
+  color: #A1A1A1; }
+
+.bold {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+  font-family: nhmed; }
+
+.body-copy {
+  text-indent: 1em; }
+
+.center {
+  text-align: center;
+  margin-bottom: 40px; }

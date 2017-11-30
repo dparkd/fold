@@ -1,0 +1,187 @@
+.mobile-container {
+  opacity: 0;
+  pointer-events: none;
+  display: none; }
+
+.desktop-container {
+  opacity: 1;
+  pointer-events: auto;
+  display: block; }
+  .desktop-container.container {
+    max-width: 1200px; }
+  .desktop-container .introduction .block {
+    padding: 250px 0;
+    opacity: 1;
+    margin-bottom: 30px; }
+    .desktop-container .introduction .block img {
+      width: 50%;
+      height: auto; }
+  .desktop-container .introduction .img-block {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    position: relative;
+    top: 15%; }
+    .desktop-container .introduction .img-block img {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .desktop-container a {
+    font-style: none;
+    color: white;
+    text-decoration: none; }
+    .desktop-container a p {
+      -webkit-transition: 0.2s ease-in-out all;
+      transition: 0.2s ease-in-out all;
+      margin-bottom: 10px; }
+    .desktop-container a i {
+      font-size: 20px;
+      padding-left: 20px; }
+    .desktop-container a:hover p {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px); }
+  .desktop-container #no-animate {
+    padding-top: 400px;
+    opacity: 1; }
+
+@media only screen and (max-device-width: 640px) {
+  .mobile-container {
+    display: inline;
+    opacity: 1;
+    pointer-events: auto;
+    padding-top: 20%; }
+    .mobile-container img {
+      width: 40%; }
+    .mobile-container svg {
+      width: 50%;
+      height: auto; }
+    .mobile-container p {
+      padding: 25px; }
+
+  .desktop-container {
+    display: none;
+    opacity: 0;
+    pointer-events: none; } }
+.t-body {
+  letter-spacing: 0.8px;
+  font-family: nhlight;
+  font-size: 2em;
+  line-height: 50px; }
+
+.t-large {
+  letter-spacing: 2px;
+  font-family: nhlight;
+  font-size: 3.2em;
+  line-height: 100px; }
+
+.t-small {
+  letter-spacing: 1.4px;
+  font-family: nhlight;
+  font-size: 2em;
+  line-height: 80px; }
+
+.t-smaller {
+  letter-spacing: .7px;
+  font-family: nhlight;
+  font-size: 1.5em;
+  line-height: 70px;
+  text-align: justify; }
+
+.t-title {
+  letter-spacing: 0.8px;
+  font-family: nhlight;
+  font-size: 3em;
+  line-height: 50px; }
+
+.indent {
+  padding-left: 20px; }
+
+.white {
+  color: white; }
+
+.black {
+  color: black; }
+
+.gray {
+  color: #A1A1A1; }
+
+.bold {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  letter-spacing: 0.3px;
+  font-family: nhmed; }
+
+.body-copy {
+  text-indent: 1em; }
+
+.center {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.digital-fold {
+  position: relative; }
+  .digital-fold .left {
+    width: 40%;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-overflow-scrolling: touch; }
+    .digital-fold .left .container {
+      display: inline-block;
+      height: 100%;
+      width: 100%; }
+    .digital-fold .left .text-area {
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .digital-fold .right {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .digital-fold .right .right-content {
+      position: relative; }
+      .digital-fold .right .right-content .text-area {
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+
+.why-videos {
+  position: relative;
+  padding: 150px 0;
+  padding-bottom: 0px;
+  display: inline-block;
+  width: 100%; }
+  .why-videos .vid-container {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+    .why-videos .vid-container video {
+      display: inline-block;
+      width: 300px;
+      height: auto;
+      padding: 10px; }
+
+body {
+  background: black;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+@font-face {
+  font-family: nhlight;
+  src: url(../fonts/NHLight.ttf);
+  font-weight: 300; }
+@font-face {
+  font-family: nhmed;
+  src: url(../fonts/NHMedium.ttf);
+  font-weight: 300; }

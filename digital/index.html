@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Fold Digitally</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link href="/stylesheets/base.css" rel="stylesheet" /><link href="/stylesheets/normalize.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/333db2d544.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <div class="digital-fold">
+
+
+
+
+  <div class="left">
+    <div class="container">
+      <div class="text-area">
+        <h1 class="t-title white">welcome to fold</h1>
+        <p class="t-body white">Fold your phone</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="right">
+    <div class="container">
+
+      <div class="right-content" id="intro">
+        <div class="text-area">
+          <p class="t-body white">step one</p>
+        </div>
+      </div>
+
+      <div class="right-content" id="stepOne">
+        <div class="text-area">
+          <p class="t-body white">step two</p>
+        </div>
+      </div>
+
+      <div class="right-content" id="stepTwo">
+        <div class="text-area">
+          <p class="t-body white">step three</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('.right-content').css('height', window.innerHeight);
+
+    $(window).resize(function() {
+      $('.right-content').css('height', window.innerHeight);      
+    });
+
+    // Offset scroll settings
+    var step_one_offset = $("#stepOne").offset().top;
+    var step_two_offset = $("#stepTwo").offset().top;
+    var $w = $(window).scroll(function(){
+        if ( $w.scrollTop() > step_one_offset && $w.scrollTop() < step_one_offset ) {   
+            console.log('step1');
+        } else if ($w.scrollTop() > step_two_offset){
+          console.log('step 2')
+        }
+    });
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

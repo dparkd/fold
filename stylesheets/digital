@@ -1,0 +1,32 @@
+.digital-fold {
+  position: relative; }
+  .digital-fold .left {
+    width: 40%;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-overflow-scrolling: touch; }
+    .digital-fold .left .container {
+      display: inline-block;
+      height: 100%;
+      width: 100%; }
+    .digital-fold .left .text-area {
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .digital-fold .right {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box; }
+    .digital-fold .right .right-content {
+      position: relative; }
+      .digital-fold .right .right-content .text-area {
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
