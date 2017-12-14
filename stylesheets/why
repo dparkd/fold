@@ -1,3 +1,13 @@
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: black url("https://i.pinimg.com/originals/4f/43/2d/4f432d9234988a5f33b26e0ba06bc6fe.gif") no-repeat center center; }
+
 .why-videos {
   position: relative;
   padding: 150px 0;

@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Fold Digitally</title>
+    <title>Fold</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link href="/stylesheets/base.css" rel="stylesheet" /><link href="/stylesheets/normalize.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/333db2d544.js"></script>
@@ -15,108 +15,71 @@
     
   </head>
   <body>
-    <div class="digital-fold">
-
-
-
-
-  <div class="left">
-    <div class="container">
-      <div class="text-area">
-        <h1 class="t-title white">welcome to fold</h1>
-        <p class="t-body white">Fold your phone</p>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="right">
-    <div class="container">
-
-      <div class="right-content" id="intro">
-        <div class="text-area">
-          <p class="t-body white">step one</p>
-        </div>
-      </div>
-
-      <div class="right-content" id="stepOne">
-        <div class="text-area">
-          <p class="t-body white">step two</p>
-        </div>
-      </div>
-
-      <div class="right-content" id="stepTwo">
-        <div class="text-area">
-          <p class="t-body white">step three</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-
-
-<div class="block no-padding" style="padding-bottom: 0px;">
-      <p class="t-large white body-copy">
-        Before moving on. I want to acknowledge that folding a smartphone might not be for everyone.
-      </p>
-    </div>
-
-    <div class="row" style="padding-top: 50px;">
-      <div class="columns six" style="padding-right: 50px;">
-        <p class="gray t-smaller">If you don't <span class="white">feel</span> addicted to your phone and you are happy with how you are using it, this lifestyle might not be for you.</p>
-      </div>
-      <div class="columns six" style="padding-right: 50px;">
-        <p class="gray t-smaller">Furthermore, folding your phone is not a <span class="white">"get rich quick"</span> type of scheme. By following the steps of this method, it's not a easy cop out way for you to be happier. Only what you put into it is what you get out of it.</p>
-      </div>
-    </div>
-
     
+
+<div class="digital">
+  <h1 class="t-large white title">how to fold your phone</h1>
+</div>
+
+<div class="stepOne steps">
+  <h2>Tap the <i class="highlight">right arrow key</i> to view steps</h2>
+  <h2>Tap the <i class="highlight">left arrow key</i> to go back a step</h2>
+</div>
+
+<div class="stepTwo steps">
+  <h1><i>Step 1 - You can do it</i></h1>
+  <h2>First things first, you need to acknowledge that you can fold your phone. Secondly, don't give up or compromise the experience by doing the steps halfway. Go all the way if you're committed and stick through it for at least 1 month. If by the end you aren't happy with folding your phone download all your apps again.</h2>
+  <br>
+  <h2>Take a <i class="highlight">deep breath.</i> you can do it.</h2>
+</div>
+
+<div class="stepThree steps">
+  <h1><i>Step 2 - Increase friction to open your phone</i></h1>
+  <h2>I know that Apple, Samsung, and Google spent millions of dollars on fingerprint technology, but I want you to remove all instances of your finger print. Go back to 2012 when we had to PIN or swipe in order to get into our phones.</h2>
+</div>
+
+<div class="stepFour steps">
+  <h1><i>Step 3 - Goodbye Infinite content</i></h1>
+  <div class="img-container">
+    <img src="/images/./how/scrolltorefresh.gif" alt="Scrolltorefresh" />
+  </div>
+  <br>
+  <h2>Get rid of all of the apps that have this kind of interaction. With this type of mechanism, our nature is to constantly check our phone and open 10 apps with every phone pickup hoping that we get something new each time.</h2>
+  <h2>Let me put it in an analogy: Is it better to eat a bowl of rice one grain at a time every second, or eat however you want?</h2> <br>
+  <h2><i class="highlight">Example Apps to delete:</i> Gmail, Email, Facebook, snapchat, Instagram, Twitter, Tumblr, Pinterest, etc.</h2>
+</div>
+
+<div class="stepFive steps">
+  <h1><i>Step 4 - Goodbye Infinite content remedy</i></h1>
+  <h2>Deleting those apps isn't the only step involved - there's one more. <i class="highlight">You have to disable safari and delete all other web browsers.</i> That way, you'll increase friction and the effort required to type in "instagram.com" in your mobile browser</h2>
+  <h2><i class="highlight">Disabling Safari how to:</i> Go to Settings -> Go to Restrictions -> Turn on Restrictions -> Turn off Safari.</h2>
+</div>
+
+<div class="stepSix steps">
+  <h1><i>Step 5 - You've folded your phone</i></h1>
+  <h2>You did it. You folded your phone. Much like folding a piece of paper, your phone is still there and it still serves your purposes. But the only difference is that you are in control. I encourage you to fold your phone for at least 1 month before installing everything again.</h2>
 </div>
 
 
+
+
 <script>
+  var stepsDigital = ['stepTwo', 'stepThree', 'stepFour', 'stepFive', 'stepSix'];
+  var counter = 0;
+
   $(document).ready(function() {
-    $('.right-content').css('height', window.innerHeight);
+    $('body').keydown(function(e) {
+      if(e.keyCode === 39) { // right
+        $('.'+stepsDigital[counter]).addClass('show');
+        counter += 1;
+      }
 
-    $(window).resize(function() {
-      $('.right-content').css('height', window.innerHeight);      
+      if(e.keyCode === 37) { // right
+        $('.'+stepsDigital[counter - 1]).removeClass('show');
+        counter -= 1;
+      }
     });
-
-    // Offset scroll settings
-    var step_one_offset = $("#stepOne").offset().top;
-    var step_two_offset = $("#stepTwo").offset().top;
-    var $w = $(window).scroll(function(){
-        if ( $w.scrollTop() > step_one_offset && $w.scrollTop() < step_one_offset ) {   
-            console.log('step1');
-        } else if ($w.scrollTop() > step_two_offset){
-          console.log('step 2')
-        }
-    });
-  });
-
+  })
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>

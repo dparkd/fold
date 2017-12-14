@@ -15,7 +15,11 @@
     
   </head>
   <body>
-    <div class="container mobile-container">
+    <div id="preloader"></div>
+  
+</div><!--END: HTML element-->
+
+<div class="container mobile-container">
   <div class="row">
     <p class="t-body white">whoops. <br> this site doesn't work on a mobile device. If you would like to truly fold your phone visit the site on a desktop computer.</p>
     <!-- <img src="/images/logo.jpg" alt="Logo" /> -->
@@ -166,6 +170,9 @@
         Much like how these realities have different ways to access them, I think the mobile phone is the mode of transportation we use the most to take us to candy crush reality, social media reality, video reality, and social validation reality.
       </p>
     </div>
+    <br>
+    <br>
+    <a href="/digital"><p class="t-small white">How do I fold? <i class="fa fa-long-arrow-right" aria-hidden="true"></i></p></a>
 
   </div>
 </div>
@@ -178,9 +185,12 @@
 
 
 <script>
-  
+
 $(document).ready(function() {
-  console.log('hello');
+
+  $(window).on('load', function() {
+    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+  });
 
 
   $('.percentage').easyPieChart({
