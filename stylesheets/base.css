@@ -147,7 +147,7 @@
 .steps {
   position: fixed;
   padding: 40px 0;
-  width: 450px;
+  width: 600px;
   display: inline-block;
   background: black;
   border: 3px solid white;
@@ -159,7 +159,7 @@
     color: white; }
   .steps h1 {
     font-family: nhlight;
-    font-size: 1.8em;
+    font-size: 1.4em;
     letter-spacing: 1px;
     margin-bottom: 40px; }
   .steps h2 {
@@ -174,7 +174,7 @@
     width: 100%;
     text-align: center; }
     .steps .img-container img {
-      width: 100%;
+      width: 200px;
       margin: 0 auto;
       text-align: center; }
   .steps .highlight {
@@ -204,9 +204,9 @@
   left: 450px; }
 
 .stepFour {
-  top: 100px;
+  top: 50px;
   left: 560px;
-  width: 600px; }
+  width: 700px; }
 
 .stepFive {
   top: 320px;
